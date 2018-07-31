@@ -2,7 +2,7 @@
 
 ![Imgur](https://i.imgur.com/wwM9IQe.png)
 
-Imagine a world-wide event where countries send athletes to compete in different events. Those athletes are awarded medallions based on the place they finish in the events, and countries compete against each other to see who can win the most medallions. These are the Super Sport Games!
+Imagine a world-wide competition where countries send athletes to compete in different events. Those athletes are awarded medallions based on the place they finish in the events, and countries compete against each other to see who can win the most medallions. These are the Super Sport Games!
 
 Our job is to create a program that can track the ages of athletes competing in events.
 
