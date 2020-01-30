@@ -9,5 +9,9 @@ class Event
   def max_age
     @ages.max
   end
+  def min_age
+    @ages.min
+  end
+  
 
 end
