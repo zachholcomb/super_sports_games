@@ -1,10 +1,13 @@
 class Event
-  attr_reader :name, :participants_ages
+  attr_reader :name, :ages
 
-  def initialize(name, participants_ages)
+  def initialize(name, ages)
     @name = name
-    @participants_ages = []
+    @ages = ages
   end
 
+  def max_age
+    @ages.max
+  end
 
 end
