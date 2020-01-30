@@ -11,13 +11,12 @@ puts "Great! Now let's add some events! Enter 'Exit' to quit."
 
 event_input = ""
 
-until event_input == "Exit"
+loop do
+  print "> "
+  event_input = gets.chomp
   if event_input == "Exit"
-    puts "Thanks, let's move on."
-  else
-    print "> "
-    event_input = gets.chomp
-    new_olympics.add_event(event_input.capitalize)
+       puts "Thanks, let's move on."
+       break
   end
-  require "pry"; binding.pry
+  new_olympics.add_event(event_input.capitalize)
 end
