@@ -10,13 +10,25 @@ new_olympics = Games.new(year)
 puts "Great! Now let's add some events! Enter 'Exit' to quit."
 
 event_input = ""
+ages = []
 
 loop do
+  puts "Add another event? Use 'Exit' to quit."
   print "> "
-  event_input = gets.chomp
+  event_input = gets.chomp.capitalize
   if event_input == "Exit"
        puts "Thanks, let's move on."
        break
   end
-  new_olympics.add_event(event_input.capitalize)
+  loop do
+    puts "I also need to know their ages, say 'Next' to enter next event."
+    print "> "
+    age_input = gets.chomp.capitalize
+    if age_input == "Next"
+      break
+    end
+    ages << age_input
+  end
+  new_event = Event.new(event_input, ages)
+  new_olympics.add_event(new_event)
 end
